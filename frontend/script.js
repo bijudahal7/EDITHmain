@@ -1,7 +1,7 @@
 // Add additional JavaScript effects or validation as needed
 // Example:
 
-const loginForm = document.getElementById("login-form");
+const loginForm = document.querySelector("form");
 
 loginForm.addEventListener("submit", (event) => {
     event.preventDefault(); // Prevent form submission
