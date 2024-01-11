@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Your Login Page Title</title>
+    <link rel="stylesheet" href="design.css">
+    <style>
+        /* Add the following styles to center align the Register button and Forgot Password link */
+        .login-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .form-group {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 10px; /* Adjust the margin as needed */
+        }
+
+        .register,
+        .forgot-password {
+            margin-top: 10px; /* Adjust the margin as needed */
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <h1>Login</h1>
+        <form>
+            <input type="text" id="username" placeholder="Username or Email">
+            <input type="password" id="password" placeholder="Password">
+            <button type="submit">Login</button>
+        </form>
+        <div class="form-group">
+            <a href="register.html" class="register button">Register</a>
+            <a href="forget.html" class="forgot-password">Forgot Password?</a>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
