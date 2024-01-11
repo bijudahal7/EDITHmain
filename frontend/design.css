@@ -1,42 +1,113 @@
-/* Basic styling for form elements */
 body {
-    background-color: #f0f0f0; /* Adjust for theme */
-    font-family: sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('bgimage.jpg'); /* Replace with the actual path to your background image */
+    background-size: cover;
+    background-position: center;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
 
 .login-container {
-    width: 300px;
-    margin: 50px auto;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 1;
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    color: #333333;
+    animation: fadeInUp 0.5s ease-in-out;
+    transition: background-color 0.3s ease-in-out; /* Smooth transition for background color */
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 h1 {
-    text-align: center;
+    color: #008000; /* Dark Green */
 }
 
-input[type="text"],
-input[type="password"] {
-    width: 100%;
+form {
+    margin-top: 20px;
+}
+
+input {
     padding: 10px;
-    margin-bottom: 10px;
+    margin: 8px 0;
+    width: 100%;
+    box-sizing: border-box;
     border: 1px solid #ccc;
-    border-radius: 3px;
+    border-radius: 4px;
+    transition: border-color 0.3s ease-in-out; /* Smooth transition for input border color */
 }
 
-button[type="submit"] {
-    background-color: #4CAF50; /* Adjust for theme */
-    color: white;
-    padding: 10px 20px;
+input:focus {
+    border-color: #008000; /* Dark Green on focus */
+}
+
+button {
+    background-color: #008000;
+    color: #fff;
+    padding: 12px 20px;
     border: none;
-    border-radius: 3px;
+    border-radius: 4px;
     cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
 }
 
-/* Example hover effect (adjust as needed) */
-input[type="text"]:hover,
-input[type="password"]:hover,
-button[type="submit"]:hover {
-    background-color: #ddd;
+button:hover {
+    background-color: #006400; /* Darker Green on Hover */
+}
+
+.register,
+.forgot-password {
+    color: #1e88e5;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.register:hover,
+.forgot-password:hover {
+    color: #0d47a1;
+}
+
+.form-group {
+    margin-top: 20px;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 10px;
+    background-color: #ffa726;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.button:hover {
+    background-color: #fb8c00;
 }

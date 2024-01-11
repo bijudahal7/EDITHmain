@@ -13,7 +13,7 @@ function submitForm() {
     }
 
     
-    alert('Registration Successful!\n\nFirst Name: ' + firstName + '\nLast Name: ' + lastName + '\nEmail: ' + email);
+    
     
    
     document.getElementById('registerForm').reset();
