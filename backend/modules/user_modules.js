@@ -16,10 +16,6 @@ email:{
 password:{
     type:String,
     required:true,
-    unique:true,
-    lowercase:true
 }
-},{Timestamp:true});
-
-
+},{timestamps:true});
 export const User=mongoose.model("User",userschema);
