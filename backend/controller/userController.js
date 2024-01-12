@@ -55,34 +55,48 @@ export const userLogin = async (req, res) => {
   }
   };
   export const userRegister = async (req, res) => {
-    const { username, email, password } = req.body;
-  
+    const { f_name, l_name, phone, email, password, c_password } = req.body;
+    console.log(req.body);
     try {
-      if (!username || !email || !password) {
+      if (!f_name || !email || !password || !l_name || !phone || !c_password) {
         return res.status(401).json({
           error: "All fields are mandatory.",
         });
       }
+     
+  
+      // Check for password match
+      if (password !== c_password) {
+        return res.status(400).json({ error: "Passwords do not match." });
+      }
   
       // Check for existing user by email or phone number
       const existingUser = await User.findOne({ email });
-  
+ 
       if (existingUser) {
-        return res.status(400).json({ error: "Email address is already registered." });
+        return res
+          .status(400)
+          .json({ error: "Email address is already registered." });
       }
   
       const hashedPassword = await bcrypt.hash(password, 10);
-
-  
-      const user = await User.create({
-        username,
+      
+      const user = await User.create ({
+    
         email,
         password: hashedPassword,
-      });
-  
+        f_name,
+        l_name,
+        phone,
+      }).then (()=>{
+        console.log("ok");
+      })
+       .catch(err => {
+        console.log(err);
+       });
       return res
         .status(200)
-        .json({ message: "User registered successfully", userId: user._id });
+        .json({ message: "User registered successfully"  });
     } catch (error) {
       console.error("Registration error:", error);
       return res
@@ -91,4 +105,3 @@ export const userLogin = async (req, res) => {
     }
   };
   
-

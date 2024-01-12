@@ -1,10 +1,16 @@
-import { Timestamp } from "mongodb";
+
 import mongoose from "mongoose";
 const userschema = new mongoose.Schema({
-username:{
+f_name:{
      type:String,
      required:true,
-     unique:true,
+   
+     lowercase:true
+},
+l_name:{
+     type:String,
+     required:true,
+    
      lowercase:true
 },
 email:{
@@ -16,6 +22,10 @@ email:{
 password:{
     type:String,
     required:true,
+},
+phone:{
+     type:BigInt,
+     required:true,
 }
 },{timestamps:true});
 export const User=mongoose.model("User",userschema);
