@@ -2,19 +2,23 @@ import mongoose,{Schema} from "mongoose";
 
  const eventSchema = new Schema({
     name: {
-        type: String,
+        type: "String",
         required: true,
         unique: true,
         lowercase: true
     },
     description: {
-        type: String,
+        type: "String",
         required: true
     },
    
     location: {
-        type: String,
+        type: "String",
         required: true
+    },
+    photo:{
+        type:"string",
+        required: true,
     }
 },{
     timestamps: true
