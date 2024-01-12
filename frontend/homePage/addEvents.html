@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="assets/plugins/slider/css/owl.carousel.min.css">
     <link rel="stylesheet" href="assets/plugins/slider/css/owl.theme.default.css">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+    <link rel="stylesheet" href="./addEvent_css/addEvents.css">
 </head>
 
 <body>
@@ -41,7 +42,7 @@
         <div class="container">
             <div class="row nav-row">
                 <div class="col-lg-3 col-md-12 logo">
-                    <a href="index.html">
+                    <a href="index1.html">
 
                         <a data-toggle="collapse" data-target="#menu" href="#menu"><i class="fas d-block d-lg-none  small-menu fa-bars"></i></a>
                     </a>
@@ -51,7 +52,11 @@
 
                             <ul class="navbad">
                                 <li class="nav-item active">
-                                    <a class="nav-link" href="index.html">Home
+                                    <a class="nav-link" href="index1.html">Home
+                                    </a>
+                                </li>
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="index1.html">Add events
                                     </a>
                                 </li>
                                 <li class="nav-item">
@@ -73,68 +78,43 @@
     </div> 
 </header>
   
-                 
-<div class="about-us container-fluid">
-    <div class="container">
+<div class="container animateanimated animatefadeIn">
+    <div class="section">
+        <h2>Add Event</h2>
+        <form id="eventForm">
+            <label for="eventName">Event Name:</label>
+            <input type="text" id="eventName" name="eventName" required>
 
-        <div class="row natur-row no-margin w-100">
-            <div class="text-part col-md-6">
-                <h2>EARTHQUAKKE VICTIMS AID</h2>
-                <P>
-                    A documentary that includes statements from a politician, two journalists and an activist highlights criticism of Turkish President Recep Tayyip Erdoğan and his ruling Justice and Development Party (AKP) for their poor job in responding to powerful earthquakes in Turkey last month. A 7.8-magnitude earthquake struck Turkey’s south on Feb. 6, which was followed by a number of aftershocks including a 7.5-magnitude temblor that jolted the region, killing more than 44,000 people in Turkey, according to the latest official figures. Following the earthquakes, Erdoğan and his government were accused of poor performance in coordinating search and rescue efforts, mainly failing to mobilize enough people and a lack of coordination among the teams, which resulted in civilians trying to pull their loved ones from under the rubble themselves.
-                </P>
-            </div>
+            <label for="eventPlace">Event Place:</label>
+            <input type="text" id="eventPlace" name="eventPlace" required>
 
-            <div class="image-part col-md-6">
-                <div class="about-quick-box row">
-                    <img src="assets/images/slider/slider-2.jpg" alt="">
-                </div>
-            </div>
-        </div>
+            <label for="eventDate">Event Date:</label>
+            <input type="date" id="eventDate" name="eventDate" required>
+
+            <label for="eventTime">Event Time:</label>
+            <input type="time" id="eventTime" name="eventTime" required>
+
+            <label for="eventDescription">Event Description:</label>
+            <textarea id="eventDescription" name="eventDescription" rows="4" required></textarea>
+        </form>
     </div>
-</div>
 
+    <div class="section animateanimated animatefadeIn">
+        <h2>Event Photo</h2>
+        <form id="photoForm">
+            <label for="eventPhoto">Upload Photo:</label>
+            <input type="file" id="eventPhoto" name="eventPhoto" accept="image/*" required>
+        </form>
+    </div>
 
-
-<div class="nav-box row clearfix">
-<div class="donate-link col-md-3"><a href="" class="btn btn-primary "><span class="btn-title">JOIN US</span></a></div>
-      <div class="donate-link col-md-3"><a href="contact_us.html" class="btn btn-primary "><span class="btn-title">Donate Now</span></a></div>
-</div>
-
-
-
-
-
-
-
-
-
-
-
+    <div class="section animateanimated animatefadeIn">
+        <button type="submit">Submit Event</button>
+    </div>
+</div>          
+ 
 
           
-      <footer class="footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4 col-sm-12">
-                    <h2>About Us</h2>
-                    <p>
-                    Promoting the different project and campagin around the world to one platform.
-                    </p>
-                </div>
-                <div class="col-md-4 col-sm-12 map-img">
-                    <h2>Contact Us</h2>
-                    <address class="md-margin-bottom-40">
-                        balkumari,kathmandu<br>
-                        Phone:+056 548954 <br>
-                        Email: <a href="mailto:info@anybiz.com" class="">environs@gmail.com</a><br>
-                        Web: <a href="smart-eye.html" class="">www.environs.com</a>
-                    </address>
 
-                </div>
-            </div>
-
-    </footer>
   
           
     
