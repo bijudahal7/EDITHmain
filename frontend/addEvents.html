@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>ENVIRONS</title>
+    <link rel="shortcut icon" href="assets/images/fav.png" type="image/x-icon">
+   <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="assets/images/fav.jpg">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet" href="assets/plugins/slider/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/plugins/slider/css/owl.theme.default.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+    <link rel="stylesheet" href="addEvents.css">
+</head>
+
+<body>
+
+<header class="continer-fluid ">
+    <div  class="header-top">
+        <div class="container">
+            <div class="row col-det">
+                <div class="col-lg-6 d-none d-lg-block">
+                    <ul class="ulleft">
+                        <li>
+                            <i class="far fa-envelope"></i>
+                            environs@gmail.com
+                            <span>|</span></li>
+                        <li>
+                            <i class="fas fa-phone-volume"></i>
+                            +056 548954</li>
+                    </ul>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <div id="menu-jk" class="header-bottom">
+        <div class="container">
+            <div class="row nav-row">
+                <div class="col-lg-3 col-md-12 logo">
+                    <a href="index1.html">
+
+                        <a data-toggle="collapse" data-target="#menu" href="#menu"><i class="fas d-block d-lg-none  small-menu fa-bars"></i></a>
+                    </a>
+
+                </div>
+                <div id="menu" class="col-lg-9 col-md-12 d-none d-lg-block nav-col">
+
+                            <ul class="navbad">
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="index1.html">Home
+                                    </a>
+                                </li>
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="index1.html">Add events
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="about_us.html">About Us</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="contact_us.html">Contact US</a>
+                                </li>
+
+
+
+
+                            </ul>
+
+
+                </div>
+            </div>
+        </div>
+    </div> 
+</header>
+  
+<div class="container animateanimated animatefadeIn">
+    <div class="section">
+        <h2>Add Event</h2>
+        <form id="eventForm">
+            <label for="eventName">Event Name:</label>
+            <input type="text" id="eventName" name="eventName" required>
+
+            <label for="eventPlace">Event Place:</label>
+            <input type="text" id="eventPlace" name="eventPlace" required>
+
+            <label for="eventDate">Event Date:</label>
+            <input type="date" id="eventDate" name="eventDate" required>
+
+            <label for="eventTime">Event Time:</label>
+            <input type="time" id="eventTime" name="eventTime" required>
+
+            <label for="eventDescription">Event Description:</label>
+            <textarea id="eventDescription" name="eventDescription" rows="4" required></textarea>
+        </form>
+    </div>
+
+    <div class="section animateanimated animatefadeIn">
+        <h2>Event Photo</h2>
+        <form id="photoForm">
+            <label for="eventPhoto">Upload Photo:</label>
+            <input type="file" id="eventPhoto" name="eventPhoto" accept="image/*" required>
+        </form>
+    </div>
+
+    <div class="section animateanimated animatefadeIn">
+        <button type="submit">Submit Event</button>
+    </div>
+</div>          
+ 
+
+          
+
+  
+          
+    
+</body>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="assets/js/jquery-3.2.1.min.js"></script>
+<script src="assets/js/popper.min.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/plugins/scroll-fixed/jquery-scrolltofixed-min.js"></script>
+<script src="assets/plugins/slider/js/owl.carousel.min.js"></script>
+<script src="assets/js/script.js"></script>
+
+</html>

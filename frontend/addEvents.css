@@ -1,0 +1,66 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.section {
+    padding: 20px;
+    border-bottom: 1px solid #ccc;
+    background-color: #e0f7fa; /* Light blue color for environment theme */
+}
+
+.section:last-child {
+    border-bottom: none;
+}
+
+.animate__animated {
+    animation-duration: 1s;
+}
+
+.label-container {
+    display: flex;
+    align-items: center;
+}
+
+.label-container label {
+    margin-bottom: 8px;
+    flex: 1;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="time"],
+textarea,
+input[type="file"] {
+    width: calc(100% - 16px);
+    padding: 8px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
